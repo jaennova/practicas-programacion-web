@@ -5,69 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>¡Contacta con Nosotros!</h1>
-    <p">¡Esperamos con interés escuchar tus ideas y colaborar contigo en proyectos emocionantes!
-        No dudes en ponerte en contacto con nosotros a través de los siguientes medios:</p>
-    <p>Teléfono: +52 123 456 7811</p>
-    <p>Correo Electrónico: correeo@empresa.com</p>
 
-    <!-- agregar una tabbla -->
-    <form method="POST">
-        <fieldset>
-            <legend>Datos Personales</legend>
-            <table border="0" width="80%">
-                <tr>
-                    <td align="left">Nombre:</td>
-                    <td><input type="text" name="nombre"></td>
-                </tr>
-                <tr>
-                    <td align="left">Correo:</td>
-                    <td><input type="email" name="correo"></td>
-                </tr>
-                <tr>
-                <tr>
-                    <td align="left">Edad:</td>
-                    <td><input type="number" name="Edad"></td>
-                </tr>
-                <td align="left">Contraseña:</td>
-                <td><input type="password" name="contrasena"></td>
-                </tr>
-                <td align="left">Género:</td>
-                <td>
-                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
-                    <label><input type="radio" name="genero" value="femenino"> Femenino</label>
-                </td>
+    <header class="header">
+        <h1>¡Contacta con Nosotros!</h1>
+    </header>
 
-                <tr>
-                    <td align="left">Hobbies:</td>
-                    <td>
-                        <label><input type="checkbox" name="nadar"> Nadar</label><br>
-                        <label><input type="checkbox" name="correr" checked> Correr</label><br>
+    <section class="contact-info">
+        <p>Esperamos con interés escuchar tus ideas y colaborar contigo en proyectos emocionantes.
+            No dudes en ponerte en contacto con nosotros a través de los siguientes medios:</p>
+        <p>Teléfono: +52 123 456 7811</p>
+        <p>Correo Electrónico: correeo@empresa.com</p>
+    </section>
+
+    <section class="contact-form">
+        <form method="POST">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="form-group">
+                    <label>Género:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Hobbies:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="nadar"> Nadar</label>
+                        <label><input type="checkbox" name="correr" checked> Correr</label>
                         <label><input type="checkbox" name="cantar"> Cantar</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="left">Preferencia de Música:</td>
-                    <td>
-                        <select name="preferenciaMusical">
-                            <option disabled selected>Seleccione una Preferencia</option>
-                            <option value="pop">Pop</option>
-                            <option value="electrónica">Electrónica</option>
-                            <option value="hip-hop">Hip Hop</option>
-                            <option value="clásica">Clásica</option>
-                        </select>
-                    </td>
-                </tr>
-        </fieldset>
-        <tr>
-            <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
-        </tr>
-        </table>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="preferenciaMusical">Preferencia de Música:</label>
+                    <select id="preferenciaMusical" name="preferenciaMusical" required>
+                        <option disabled selected>Seleccione una Preferencia</option>
+                        <option value="pop">Pop</option>
+                        <option value="electrónica">Electrónica</option>
+                        <option value="hip-hop">Hip Hop</option>
+                        <option value="clásica">Clásica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>    
 
-    </form>
+<footer class="footer">
+    <p>&copy; 2023 Tu Empresa</p>
+</footer>
+
 </body>
 
 </html>
