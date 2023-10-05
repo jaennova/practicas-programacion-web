@@ -1,0 +1,13 @@
+h1 {
+  text-align: center; /* Centra el texto */
+  font-family: Arial, sans-serif; /* Cambia la fuente, ajusta según tus preferencias */
+  font-size: 36px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+img {
+  display: block; /* Asegura que la imagen esté centrada */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Hace que la imagen mantenga su proporción de aspecto */
+}
