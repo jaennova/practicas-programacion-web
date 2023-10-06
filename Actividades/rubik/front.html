@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cubo </title>
+
+    <style type="text/css">
+        #enlace {
+            cursor: url("imagen/icono.png"), auto;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center><br>
+        <img src="./assets/rubik-front.png" usemap="#mapa1" width="276" height="319">
+    </center>
+
+    <map name="mapa1">
+        <area target="Abajo" id="enlace" title="Rojo" href="./colores/blanco.html" coords="28,64,122,18,243,51,148,98"
+            shape="poly">
+        <area target="Abajo" id="enlace" title="Blanco" href="./colores/rojo.html" coords="27,65,148,99,147,239,26,206"
+            shape="poly">
+        <area target="Abajo" id="enlace" title="Azul" href="./colores/azul.html" coords="151,243,244,195,244,53,150,98"
+            shape="poly">
+        <area target="Medio2" id="enlace" title="siguiente" href="back.html"
+            coords="173,293,179,304,211,304,217,282,192,276,194,287" shape="poly">
+    </map>

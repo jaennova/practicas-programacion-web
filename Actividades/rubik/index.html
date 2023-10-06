@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica Cubo Rubik</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cubo de Rubik</title>
+    <style type="text/css">
+        #Arriba {
+            background-color: #c4cccf;
+        }
+
+        #Abajo {
+            background-color: #6cabd8;
+        }
+    </style>
 </head>
 
-<frameset rows="10%,80%,35%" noresize border=0 scrolling="no">
+<frameset rows="30%, 100%, 30%" border=0>
 
-    <frame name=arriba src="inicio.html" scrolling="no">
-
-        <frameset rows="100%">
-            <frame name=medio src="menu.html" scrolling="no">
-        </frameset>
-
-        <frame name=abajo src="elegir.html" scrolling="no">
+    <frame src="header.html" name="Arriba" id="Arriba" inoresize>
+        <frame src="sides.html" name="Medio" noresize>
+            <frame name="Abajo" id="Abajo" noresize>
 </frameset>
 
 </html>
