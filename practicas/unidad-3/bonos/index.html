@@ -23,7 +23,7 @@
         } else {
             var subtotal = sueldoDiario * diasTrabajados;
 
-            if (antiguedad >= 15) {
+            if (antiguedad >= 1) {
                 var confirmacion = confirm("Este empleado ha obtenido bono por antigüedad, ¿desea aceptar el bono?");
                 if (confirmacion) {
                     if (antiguedad >= 15 && antiguedad < 20) {
@@ -36,6 +36,7 @@
                         bono = subtotal * 0.50;
                     }
                 } else {
+                    alert("Por favor, ingrese números válidos.");
                     total = subtotal;
                     bono = "no hay bono"
                 }
