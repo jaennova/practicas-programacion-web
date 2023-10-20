@@ -78,7 +78,7 @@ function generarTexto(texto, color, tamano, alineacion, fuente) {
 }
 
 // Obtener entradas del usuario
-const texto = prompt('Ingresa el texto random');
+const texto = prompt('Ingresa el texto');
 const color = prompt('Elige un color (1. Azul, 2. Rojo, 3. Verde, 4. Naranja)');
 const tamano = prompt('Ingresa el tamaño del texto (en px)');
 const alineacion = prompt('Elige la alineación (1. Centrado, 2. Izquierda, 3. Derecha)');
