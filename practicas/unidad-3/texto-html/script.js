@@ -1,58 +1,56 @@
 // Función para obtener el estilo de color
 function obtenerColorEstilo(color) {
-    let colorCss;
+    let colorHtml;
     switch (color) {
         case '1':
-            colorCss = 'blue';
+            colorHtml = 'color: blue;';
             break;
         case '2':
-            colorCss = 'red';
+            colorHtml = 'color: red;';
             break;
         case '3':
-            colorCss = 'green';
+            colorHtml = 'color: green;';
             break;
         case '4':
-            colorCss = 'orange';
+            colorHtml = 'color: orange;';
             break;
         default:
-            colorCss = 'black';
+            colorHtml = 'color: black;';
     }
-    return colorCss;
+    return colorHtml;
 }
 
 // Función para obtener el estilo de alineación
 function obtenerAlineacionEstilo(alineacion) {
-    let alineacionCss;
+    let alineacionHtml;
     switch (alineacion) {
         case '1':
-            alineacionCss = 'text-align: center;';
+            alineacionHtml = 'text-align: center;';
             break;
         case '2':
-            alineacionCss = 'text-align: left;';
+            alineacionHtml = 'text-align: left;';
             break;
         case '3':
-            alineacionCss = 'text-align: right;';
+            alineacionHtml = 'text-align: right;';
             break;
         default:
-            alineacionCss = '';
+            alineacionHtml = '';
     }
-    return alineacionCss;
+    return alineacionHtml;
 }
-
 
 // Función para generar el texto con el estilo aplicado
 function generarTexto(texto, color, tamano, alineacion) {
-    const colorCss = obtenerColorEstilo(color);
-    const alineacionCss = obtenerAlineacionEstilo(alineacion);
-    const fuenteCss = obtenerFuenteEstilo(fuente);
+    const colorHtml = obtenerColorEstilo(color);
+    const alineacionHtml = obtenerAlineacionEstilo(alineacion);
 
-    const estilo = `
-        color: ${colorCss};
-        font-size: ${tamano}px;
-        ${alineacionCss}
-    `;
+    const estilo = `${colorHtml} ${alineacionHtml} font-size: ${tamano}px;`;
 
-    document.write(`<p style="${estilo}">${texto}</p>`);
+    const elementoP = document.createElement('p');
+    elementoP.style = estilo;
+    elementoP.textContent = texto;
+
+    document.body.appendChild(elementoP);
 }
 
 // Obtener entradas del usuario
@@ -61,4 +59,4 @@ const color = prompt('Elige un color (1. Azul, 2. Rojo, 3. Verde, 4. Naranja)');
 const tamano = prompt('Ingresa el tamaño del texto (en px)');
 const alineacion = prompt('Elige la alineación (1. Centrado, 2. Izquierda, 3. Derecha)');
 
-generarTexto(texto, color, tamano, alineacion, fuente);
+generarTexto(texto, color, tamano, alineacion);
