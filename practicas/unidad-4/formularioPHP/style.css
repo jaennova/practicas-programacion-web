@@ -1,0 +1,75 @@
+/* Estilos de la tabla */
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f2f2f2;
+}
+
+/* Estilos de filas pares e impares */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos de formularios */
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+input[type="submit"], form button, a {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover, form button:hover, a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de campos de formulario */
+form input[type="text"], form input[type="email"], form select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: red;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}

@@ -29,7 +29,7 @@ function obtenerSaludo() {
     return saludo;
 }
 
-function saludarConFechaYHora() {
+function actualizarHora() {
     const fecha = obtenerFecha();
     const hora = obtenerHora();
     const saludo = obtenerSaludo();
@@ -37,4 +37,5 @@ function saludarConFechaYHora() {
     document.getElementById("saludo").innerHTML = mensaje;
 }
 
-document.getElementById("boton").addEventListener("click", saludarConFechaYHora);
+// Llamamos a la función para actualizar la hora cada segundo (1000 milisegundos).
+setInterval(actualizarHora, 1000);

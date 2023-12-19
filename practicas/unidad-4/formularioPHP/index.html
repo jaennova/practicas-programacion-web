@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="es">
+<head>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="validate.js"></script>
+</head>
+<body>
+    <form action="insert.php" method="post" enctype="multipart/form-data">
+        <label>Nombre:</label><input type="text" name="nombre">
+        <label>Apellido:</label><input type="text" name="apellido">
+        <label>Correo:</label><input type="email" name="correo">
+        <label>Número de Control:</label><input type="text" name="numero_control">
+        <label>Carrera:</label><input type="text" name="carrera">
+        <label>RFC:</label><input type="text" name="rfc">
+        <!-- <label>Imagen:</label><input type="file" name="imagen"> -->
+        <center>
+            <input type="submit" value="Enviar">
+        </center>
+    </form>
+    <center>
+        <button onclick="location.href='display.php'">Ver tabla</button>
+    </center>
+</body>
+</html>
