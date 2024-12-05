@@ -47,7 +47,7 @@ cd practicas-programacion-web
 - Para prácticas con PHP, coloca los archivos en tu directorio de servidor web local
 
 ### Acceso en Línea
-- Visita la [página web principal](https://jaenn.netlify.app/) para ver todas las prácticas desplegadas
+- Visita la [página web principal](https://practicas-programacion-web.netlify.app/) para ver todas las prácticas desplegadas
 
 ## Estructura de Archivos
 
